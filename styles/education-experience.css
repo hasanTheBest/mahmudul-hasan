@@ -89,14 +89,32 @@
 }
 
 .skill:nth-child(2) .skill-indicator::after {
-  width: 65%;
+  width: 60%;
 }
 .skill:nth-child(3) .skill-indicator::after {
-  width: 75%;
+  width: 65%;
 }
 .skill:nth-child(4) .skill-indicator::after {
-  width: 90%;
+  width: 80%;
 }
+.skill:nth-child(4) .skill-indicator::after {
+  width: 85%;
+}
+
+.skill-group.backend  .skill:nth-child(1) .skill-indicator::after {
+  width: 65%;
+}
+.skill-group.backend  .skill:nth-child(2) .skill-indicator::after {
+  width: 75%;
+}
+.skill-group.backend  .skill:nth-child(3) .skill-indicator::after {
+  width: 70%;
+}
+.skill-group.backend  .skill:nth-child(4) .skill-indicator::after {
+  width: 50%;
+}
+
+
 
 /* Tools and technologies */
 .tools-technologies {
