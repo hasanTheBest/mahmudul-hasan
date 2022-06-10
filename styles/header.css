@@ -1,0 +1,106 @@
+/* ================ Start Custom styles Body =========================== */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  color: white;
+  height: 100vh;
+}
+
+/* ========= Wrapper ========= */
+.wrapper {
+  background-color: var(--dark);
+  display: flex;
+  max-width: var(--wrapper-xlg); /* 1320px for Extra large device >1400 */
+  aspect-ratio: 16 / 9;
+  overflow-y: auto;
+}
+
+header {
+  background-color: var(--dark5);
+  padding: 1rem;
+}
+
+/* ======== Main Navigation ============ */
+.main-navigation {
+  min-width: 200px;
+}
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-item > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 0.7em 1.2em;
+  display: block;
+}
+.nav-link:hover {
+  cursor: pointer;
+  color: var(--secondary);
+}
+.nav-link > i {
+  margin-right: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.nav-item > a:hover,
+.nav-item > a.active {
+  color: var(--secondary);
+}
+
+/* =============== main ========== */
+main {
+  padding: 2rem;
+  width: calc(var(--wrapper-xlg) - 200px); /* 1320 - 200(nav) = 1120 */
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ========== Section ===============  */
+.wrapper main > section {
+  padding: 2rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: opacity 0.8s ease, left 1s ease-out 0.5s;
+}
+
+/* ====== Navigation Controls ========== */
+
+/* Generally hide input radio element */
+input[type="radio"] {
+  display: none;
+}
+
+/* When Click Nav button */
+input[id="to-home"]:checked ~ section.home,
+input[id="to-about"]:checked ~ section.about,
+input[id="to-education"]:checked ~ section.education-experience,
+input[id="to-portfolio"]:checked ~ section.portfolio-section,
+input[id="to-contact"]:checked ~ section.contact-section {
+  left: 0;
+}
+
+/* Push away other sections */
+input[id="to-home"]:checked ~ section:not(section.home),
+input[id="to-about"]:checked ~ section:not(section.about),
+input[id="to-education"]:checked ~ section:not(section.education-experience),
+input[id="to-portfolio"]:checked ~ section:not(section.portfolio-section),
+input[id="to-contact"]:checked ~ section:not(section.contact-section) {
+  left: 100%;
+  opacity: 0;
+}

@@ -1,0 +1,38 @@
+/* ========== Custom Variables ================ */
+@import url("custom-var.css");
+
+/* ========== General ================ */
+@import url("general.css");
+
+/* ========== Utilities ================ */
+@import url("utilities.css");
+
+/* ========== Header ============ */
+@import url("header.css");
+
+/* ==================== Home Section ================= */
+@import url("home-section.css");
+
+/* ================== About Section ================ */
+@import url("about-section.css");
+
+/* ================== Education and Experience =================== */
+@import url("education-experience.css");
+
+/* ==================== Portfolio Section ========== */
+
+@import url("portfolio-section.css");
+
+/* =============== Contact Section ============== */
+@import url("contact-section.css");
+
+/* =============== Responsive Styles ================= */
+@import url("desktop-lg.css") screen and (min-width: 1200.01px) and
+  (max-width: 1400px);
+
+@import url("desktop-md.css") screen and (min-width: 992.01px) and
+  (max-width: 1200px);
+
+@import url("tablet.css") screen and (min-width: 768px) and (max-width: 992px);
+
+@import url("mobile.css") screen and (max-width: 767.01px);

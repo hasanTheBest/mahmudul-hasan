@@ -1,0 +1,122 @@
+.contact-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+.contact-section > .section-title {
+  grid-column: span 3;
+}
+
+/* Contact map */
+.contact-map {
+  min-height: 120px;
+  aspect-ratio: 21 / 9;
+  max-height: 350px;
+  margin-bottom: 2rem;
+}
+
+.contact-map > img {
+  width: 100%;
+  height: auto;
+}
+.contact-form-title {
+  margin-bottom: 1.5em;
+}
+/* Contact from wrapper */
+.form-input-wrapper {
+  display: flex;
+}
+.form-input-wrapper > div {
+  flex-grow: 1;
+}
+.form-input-wrapper > div:last-child > .form-group {
+  height: 100%;
+  margin-left: 1.5rem;
+}
+
+/* form group */
+.form-group {
+  position: relative;
+}
+.form-group:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+.form-group > input,
+.form-group > textarea {
+  background-color: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--dark5);
+  padding: 0.8rem 0.8rem;
+  width: 100%;
+}
+
+.form-group > textarea {
+  height: 100%;
+  resize: none;
+}
+
+/* Hide place holder */
+.form-group > input::placeholder,
+.form-group > textarea::placeholder {
+  opacity: 0;
+}
+.form-group > label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.form-group > label[for="message"] {
+  top: 0.5rem;
+  transform: translateY(-25%);
+}
+
+/* When input is not empty */
+.form-group > input:not(:placeholder-shown) + label,
+.form-group > input:focus + label,
+.form-group > textarea:not(:placeholder-shown) + label,
+.form-group > textarea:focus + label {
+  top: 0;
+  transform: translateY(-50%);
+  background-color: var(--dark);
+  padding: 0 0.3rem;
+  font-size: 0.8125rem;
+  letter-spacing: 0.4px;
+}
+
+/* Submit Button */
+.form-group > button[type="submit"] {
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--dark5);
+  background-color: transparent;
+  margin-top: 2rem;
+  color: white;
+  width: calc(50% - 0.75rem); /* padding: 1.5/2  */
+  transition: all 0.3s ease;
+}
+/* Focus and hover */
+.form-group > button[type="submit"]:focus,
+.form-group > button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--secondary);
+}
+/* Contact Information */
+.contact-info-item {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: var(--dark2);
+  margin-bottom: 1rem;
+}
+.contact-info-item:last-child {
+  margin-bottom: 0;
+}
+.contact-info-item > .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,88 @@
+/* Portfolio navigation */
+.portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+/* Portfolio Nav Item */
+.portfolio-nav > a {
+  padding: 0.5rem 0.8rem;
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+/* .portfolio-nav > label:focus, */
+
+.portfolio-nav > a:hover,
+.portfolio-nav > a:active {
+  background-color: var(--secondary);
+}
+.portfolio-nav > a > label:hover {
+  cursor: pointer;
+}
+.portfolio-nav > a:not(:last-child) {
+  margin-right: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Portfolios */
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5rem;
+  gap: 1.5rem;
+}
+
+/* Portfolio Item */
+.portfolio {
+  position: relative;
+  transition: all 1s ease;
+}
+
+/* Portfolio Item image */
+.portfolio > img {
+  max-width: 100%;
+  min-height: 200px;
+}
+
+/* portfolio item live and code */
+.portfolio > p{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Portfolio Item code and live link */
+.portfolio > p  a{
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* Portfolio Item title */
+.portfolio > h5 {
+  margin-top: 0.5rem;
+}
+
+/* Portfolio link */
+.portfolio > h5 > a{
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.portfolio > h5 > a:focus,.portfolio > h5 > a:hover{
+  color: var(--text-primary);
+}
+
+.portfolios > input[id="html-css"]:checked ~ div:not([class*="html-css"]),
+.portfolios > input[id="react-js"]:checked ~ div:not([class*="react-js"]),
+.portfolios > input[id="vanila-js"]:checked ~ div:not([class*="vanila-js"]),
+.portfolios > input[id="wordpress"]:checked ~ div:not([class*="wordpress"]),
+.portfolios > input[id="fullstack"]:checked ~ div:not([class*="fullstack"]) {
+  transform: scale(0);
+  position: absolute;
+}

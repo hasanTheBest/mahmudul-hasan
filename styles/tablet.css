@@ -1,0 +1,63 @@
+/* ============= header ========== */
+.wrapper {
+  max-width: var(--wrapper-sm); /* 720px for small screen > 992 */
+  aspect-ratio: 2 / 3;
+}
+/* Main Navigation */
+.main-navigation {
+  min-width: 25px;
+}
+.nav-link {
+  padding: 0.8rem 0.1rem;
+}
+.nav-link > i[class^="fa"] {
+  margin: 0 auto;
+}
+.nav-link > i[class^="fa"] + span {
+  display: none;
+}
+
+/* =========== Education Experience  ================ */
+.education-experience {
+  display: block;
+}
+/* Skill container */
+.skills-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-group {
+  flex-basis: calc(50% - 2rem); /* for left, right 1rem margin */
+  flex-grow: 1;
+}
+.skill-group:first-child {
+  margin-right: 1rem;
+}
+.skill-group:last-child {
+  margin-left: 1rem;
+}
+.tools-technologies {
+  flex-basis: 100%;
+}
+.tools-technologies-title {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+/* =========== Contact =========== */
+.contact-section {
+  display: block;
+}
+.form-group > button[type="submit"] {
+  margin-left: 25%;
+}
+.contact-info {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact-info-item {
+  flex-grow: 1;
+  flex-basis: calc(50% - 2rem);
+  margin: 1rem;
+}

@@ -1,0 +1,117 @@
+/* General */
+html {
+  font-size: 12px;
+}
+
+body {
+  display: block;
+}
+/* ======= Header ========== */
+.wrapper {
+  max-width: var(--wrapper-xsm);
+  flex-direction: column;
+  aspect-ratio: auto;
+  height: 100%;
+}
+main {
+  width: 100%;
+  flex-grow: 1;
+}
+
+/* Navigation */
+header {
+  padding: 0.5rem 1rem;
+}
+.main-navigation {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+}
+.nav-link > i {
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+}
+.nav-link > i[class^="fa"] + span {
+  display: none;
+}
+
+/* ======== Home Section ====== */
+.home {
+  justify-content: center;
+  text-align: center;
+}
+
+/* ========== About Me Section ========== */
+.basic-info {
+  display: block;
+  margin-bottom: 3rem;
+}
+.basic-info > .about-me {
+  padding-right: 0;
+}
+.basic-info > .location {
+  padding-left: 0;
+}
+.basic-services {
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+/* ============= Education and Experience =========== */
+.education-experience {
+  display: block;
+}
+.skills-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-group {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+
+.tools-technologies-title {
+  flex-basis: 100%;
+}
+
+/* ================ Contact Section ================= */
+.contact-section {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.contact-section > .section-title {
+  order: 1;
+}
+.form-input-wrapper {
+  flex-wrap: wrap;
+}
+.form-input-wrapper > div {
+  flex-basis: 300px;
+}
+.form-input-wrapper .form-group {
+  margin-bottom: 1.5rem;
+}
+.form-input-wrapper > div:last-child > .form-group {
+  margin-left: 0;
+}
+.form-group > button[type="submit"] {
+  margin: 2rem auto;
+  margin-left: 25%;
+}
+
+/* contact info */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info-item {
+  flex-grow: 1;
+  margin-right: 1rem;
+}

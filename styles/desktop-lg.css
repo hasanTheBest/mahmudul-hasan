@@ -1,0 +1,4 @@
+/* ========= Header ========== */
+.wrapper {
+  max-width: var(--wrapper-lg); /* 1140px for large device and >1400 */
+}

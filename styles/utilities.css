@@ -1,0 +1,7 @@
+/* ============= Utilities ============= */
+.text-primary {
+  color: var(--secondary);
+}
+.text-green {
+  color: var(--green);
+}

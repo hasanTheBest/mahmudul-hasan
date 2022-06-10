@@ -1,0 +1,17 @@
+/* ======== Header ========== */
+.wrapper {
+  max-width: var(--wrapper-md); /* 960px for medium device > 1200 */
+}
+
+/* =========== Main Navigation ======== */
+.main-navigation {
+  min-width: 100px;
+}
+.nav-link {
+  text-transform: capitalize;
+  text-align: center;
+}
+.nav-link > i[class^="fa"] {
+  display: block;
+  margin: 0.1rem auto;
+}

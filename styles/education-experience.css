@@ -1,0 +1,116 @@
+/* Education and Experience */
+.education-experience {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 2fr 1fr;
+}
+.education-experience > .section-title {
+  grid-area: auto;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* Courses */
+.edu-exp-block > .title {
+  margin-bottom: 1.5em;
+}
+.courses {
+  margin-bottom: 3rem;
+}
+.course {
+  display: grid;
+  grid-template-columns: 1fr auto 3fr;
+}
+/* Course Year and institution */
+.course-year {
+  padding-top: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: right;
+  min-width: 120px;
+}
+/* Vertical bar */
+.course .middle-bar {
+  display: flex;
+}
+.course .middle-bar > span {
+  background-color: var(--dark5);
+  width: 2px;
+}
+/* course details */
+.course-detail {
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+/* course-title */
+.course-title {
+  position: relative;
+}
+/* Small circle on vertical bar */
+.course-title::before {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 50%;
+  right: calc(100% + 1.5rem - 3px);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 5;
+  border: 1px solid var(--secondary);
+}
+
+/* ====== skills block ====== */
+.skill-group {
+  margin-bottom: 2rem;
+}
+.skill:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+}
+.skill-indicator {
+  height: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid var(--secondary);
+  position: relative;
+}
+.skill-indicator::after {
+  position: absolute;
+  content: "";
+  width: 85%;
+  height: 30%;
+  top: 50%;
+  left: 0.5rem;
+  transform: translateY(-50%);
+  background-color: var(--secondary);
+}
+
+.skill:nth-child(2) .skill-indicator::after {
+  width: 65%;
+}
+.skill:nth-child(3) .skill-indicator::after {
+  width: 75%;
+}
+.skill:nth-child(4) .skill-indicator::after {
+  width: 90%;
+}
+
+/* Tools and technologies */
+.tools-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  margin: 0.5rem 0;
+}
+
+.tools-technologies > h6 {
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background-color: var(--secondary);
+}
+.tools-technologies > h6:not(:last-child) {
+  margin-right: 0.5rem;
+}

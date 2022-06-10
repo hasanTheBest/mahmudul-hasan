@@ -1,0 +1,26 @@
+/* =====================================
+  Custom Variables
+========================================== */
+:root {
+  --primary: #2655ac; /* blue */
+  --secondary: #f77824; /* orange */
+  --green: #009983; /* green */
+  --red: #f45442; /* red */
+  --purple: #af3078; /* purple */
+  --dark: #121212;
+  --dark1: #1d1d1d;
+  --dark2: #212121;
+  --dark3: #242424;
+  --dark4: #272727;
+  --dark5: #2c2c2c;
+
+  --text-primary: #fff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-disabled: rgba(255, 255, 255, 0.5);
+
+  --wrapper-xlg: 1320px; /* where screen size 1400px and above */
+  --wrapper-lg: 1140px; /* where screen size 1200px and above */
+  --wrapper-md: 960px; /* where screen size 992px and above */
+  --wrapper-sm: 720px; /* where screen size 768px and above */
+  --wrapper-xsm: 100%; /* where screen size less then 768px */
+}

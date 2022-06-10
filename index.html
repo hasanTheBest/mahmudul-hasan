@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Single Page Application</title>
+
+    <!-- Font, Raleway and Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize browser default behavior -->
+    <link rel="stylesheet" href="styles/moder-normalize.min.css" />
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles/main-style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4941042557.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="main-navigation">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#to-home" class="active">
+                <label for="to-home" class="nav-link btn">
+                  <i class="fas fa-home"></i><span>Home</span>
+                </label>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#to-about">
+                <label for="to-about" class="nav-link btn">
+                  <i class="fas fa-user"></i><span>About</span>
+                </label>
+              </a>
+            </li>
+            <li class="nav-item">
+              <label for="to-education" class="nav-link btn">
+                <i class="fas fa-graduation-cap"></i><span>Education</span>
+              </label>
+            </li>
+            <li class="nav-item">
+              <label for="to-portfolio" class="nav-link btn">
+                <i class="fas fa-briefcase"></i><span>Portfolio</span>
+              </label>
+            </li>
+            <li class="nav-item">
+              <label for="to-contact" class="nav-link btn">
+                <i class="far fa-address-card"></i><span>Contact</span>
+              </label>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- <input type="radio" name="nav" id="to-home" checked /> -->
+        <input type="radio" name="nav" id="to-home" checked />
+        <input type="radio" name="nav" id="to-about" />
+        <input type="radio" name="nav" id="to-education" />
+        <input type="radio" name="nav" id="to-portfolio" />
+        <input type="radio" name="nav" id="to-contact" />
+
+        <!-- =================== Home ======================= -->
+        <section class="home">
+          <div>
+            <h1>
+              <span class="text-primary">M</span>ahmudul
+              <span class="text-green">H</span>asan
+            </h1>
+            <h4 class="subtitle-1">dreamer, Designer and Developer</h4>
+            <p class="body-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+              rerum? Voluptas, in. Velit sequi perferendis, voluptates ratione
+              eaque possimus sed ducimus sint ex molestias expedita vitae
+              tempore atque voluptate omnis!
+            </p>
+          </div>
+        </section>
+
+        <!-- ================== About ===================== -->
+        <section class="about">
+          <!-- Basic info -->
+          <div class="basic-info">
+            <!-- About Me -->
+            <div class="about-me">
+              <h2>About <span class="text-primary">Me</span></h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deserunt aliquam, iusto dolores ad doloribus eos suscipit veniam
+                alias in quasi, neque sed repudiandae blanditiis velit quibusdam
+                illum incidunt esse qui.
+              </p>
+            </div>
+            <!-- Address -->
+            <address class="location">
+              <strong class="text-primary">Age</strong> 25<br />
+              <strong class="text-primary">Residence</strong> Bangladesh<br />
+              <strong class="text-primary">Address</strong> Raj street, Rajshahi
+              <br />
+              <strong class="text-primary">Phone</strong> (+880) 124 322 <br />
+              <strong class="text-primary">Emai</strong> mail@email.com
+            </address>
+          </div>
+
+          <!-- Basic services -->
+          <h3 class="basic-services-title">
+            What <span class="text-primary">I Do</span>
+          </h3>
+          <div class="basic-services">
+            <!-- Basic Service 1 -->
+            <div class="basic-service">
+              <div class="icon">
+                <span>
+                  <i class="far fa-file-code"></i>
+                </span>
+              </div>
+              <h4 class="basic-service-title">Web Development</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                quaerat.
+              </p>
+            </div>
+            <!-- Basic Service 2 -->
+            <div class="basic-service">
+              <div class="icon">
+                <span>
+                  <i class="far fa-file-code"></i>
+                </span>
+              </div>
+              <h4 class="basic-service-title">Dev ops</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                quaerat.
+              </p>
+            </div>
+
+            <!-- Basic Service 3 -->
+            <div class="basic-service">
+              <div class="icon">
+                <span>
+                  <i class="far fa-file-code"></i>
+                </span>
+              </div>
+              <h4 class="basic-service-title">E-commerce</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                quaerat.
+              </p>
+            </div>
+
+            <!-- Basic Service 4 -->
+            <div class="basic-service">
+              <div class="icon">
+                <span>
+                  <i class="far fa-file-code"></i>
+                </span>
+              </div>
+              <h4 class="basic-service-title">Web Programming</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                quaerat.
+              </p>
+            </div>
+          </div>
+
+          <!-- Clients -->
+          <div class="clients">
+            <div class="client">
+              <img src="images/companies/company-1.svg" alt="1" />
+            </div>
+            <div class="client">
+              <img src="images/companies/company-2.svg" alt="2" />
+            </div>
+            <div class="client">
+              <img src="images/companies/company-4.svg" alt="4" />
+            </div>
+
+            <div class="client">
+              <img src="images/companies/company-6.svg" alt="6" />
+            </div>
+            <div class="client">
+              <img src="images/companies/company-7.svg" alt="7" />
+            </div>
+          </div>
+
+          <!-- Fun facts -->
+          <h4 class="fun-facts-title">
+            Fun <span class="text-primary">Facts</span>
+          </h4>
+          <div class="fun-facts">
+            <!-- Fact 1 -->
+            <div class="fact">
+              <span class="icon text-primary"
+                ><i class="far fa-heart"></i
+              ></span>
+              <h6>Happy Clients</h6>
+              <h5 class="h4">587</h5>
+            </div>
+            <!-- Fact 2 -->
+            <div class="fact">
+              <span class="icon text-primary"
+                ><i class="far fa-heart"></i
+              ></span>
+              <h6>Happy Clients</h6>
+              <h5 class="h4">587</h5>
+            </div>
+            <!-- Fact 3 -->
+            <div class="fact">
+              <span class="icon text-primary"
+                ><i class="far fa-heart"></i
+              ></span>
+              <h6>Happy Clients</h6>
+              <h5 class="h4">587</h5>
+            </div>
+          </div>
+        </section>
+
+        <!-- ========== Education/Experience ============== -->
+        <section class="education-experience">
+          <!-- Section title -->
+          <h2 class="section-title">Resume</h2>
+
+          <!-- Education and Experience Block -->
+          <div class="edu-exp-block">
+            <!-- Experience -->
+            <h3 class="title">Experience</h3>
+            <div class="courses">
+              <!-- experience 1 -->
+              <div class="course">
+                <h6 class="subtitle-2 course-year">
+                  2022 <br />Hero of <br />Programming
+                </h6>
+                <div class="middle-bar">
+                  <span></span>
+                </div>
+                <div class="course-detail">
+                  <h4 class="course-title">Frontend Development</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam deleniti non aliquid! Quis, eaque labore!
+                  </p>
+                </div>
+              </div>
+
+              <!-- Course 2 -->
+              <div class="course">
+                <h6 class="subtitle-2 course-year">
+                  2018 <br />The Boss of <br />WordPress
+                </h6>
+                <div class="middle-bar"><span></span></div>
+                <div class="course-detail">
+                  <h4 class="course-title">WordPress Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam deleniti non aliquid! Quis, eaque labore!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Eduction -->
+            <h3 class="title">Education</h3>
+            <div class="courses">
+              <!-- Course 1 -->
+              <div class="course">
+                <h6 class="subtitle-2 course-year">
+                  2022 <br />Hero of <br />Programming
+                </h6>
+                <div class="middle-bar">
+                  <span></span>
+                </div>
+                <div class="course-detail">
+                  <h4 class="course-title">Frontend Development</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam deleniti non aliquid! Quis, eaque labore!
+                  </p>
+                </div>
+              </div>
+
+              <!-- Course 2 -->
+              <div class="course">
+                <h6 class="subtitle-2 course-year">
+                  2018 <br />The Boss of <br />WordPress
+                </h6>
+                <div class="middle-bar"><span></span></div>
+                <div class="course-detail">
+                  <h4 class="course-title">WordPress Developer</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquam deleniti non aliquid! Quis, eaque labore!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills Block -->
+          <div class="skills-block">
+            <!-- Skill group Frontend -->
+            <div class="skill-group">
+              <h4 class="skill-title">Frontend</h4>
+              <!-- Skill 1 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>React Js</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>React Redux</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>React Router</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>Material UI</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+              <!-- Skill 5 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>React Bootstrap</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+            </div>
+
+            <!-- Skill group Backend -->
+            <div class="skill-group">
+              <h4 class="skill-title">Backend</h4>
+              <!-- Skill 1 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>Node Js</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>Express JS</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>Mongo DB</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="skill">
+                <div class="skill-name">
+                  <strong>PHP</strong>
+                  <span class="subtitle-2">80%</span>
+                </div>
+                <div class="skill-indicator"></div>
+              </div>
+            </div>
+
+            <!-- Tools and technologies -->
+            <div class="tools-technologies">
+              <h4 class="tools-technologies-title">
+                Tools & <span class="text-primary">Technologies</span>
+              </h4>
+              <h6 class="body-2">git</h6>
+              <h6 class="body-2">gitHub</h6>
+              <h6 class="body-2">Gulp</h6>
+              <h6 class="body-2">npm</h6>
+              <h6 class="body-2">Figma</h6>
+              <h6 class="body-2">VS Code</h6>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ Portfolio ===================== -->
+        <section class="portfolio-section">
+          <h2 class="section-title">Portfolio</h2>
+
+          <!-- Portfolio Navigation -->
+          <nav class="portfolio-nav">
+            <a href="#"> <label for="all">All</label> </a>
+            <a href="#"> <label for="html-css">HTML & CSS</label></a>
+            <a href="#"> <label for="react-js">React JS</label></a>
+            <a href="#"> <label for="vanila-js">Vanila JS</label></a>
+            <a href="#"> <label for="wordpress">WordPress</label></a>
+            <a href="#"> <label for="fullstack">Fullstack</label></a>
+          </nav>
+
+          <!-- Portfolios -->
+          <div class="portfolios">
+            <input type="radio" name="portfolio" id="all" checked />
+            <input type="radio" name="portfolio" id="html-css" />
+            <input type="radio" name="portfolio" id="react-js" />
+            <input type="radio" name="portfolio" id="wordpress" />
+            <input type="radio" name="portfolio" id="vanila-js" />
+            <input type="radio" name="portfolio" id="fullstack" />
+
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio react-js">
+              <img
+                src="images/projects/try-recipes.png"
+                alt="Recipes home pic"
+              />
+
+              <p>
+                <small>
+                  <a href="https://try-recipes.netlify.app" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/try-recipes"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a href="https://try-recipes.netlify.app" target="_blank">
+                  Recipes- Explore and Cook with text and video instructions
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio vanila-js">
+              <img
+                src="images/projects/js-wall-clock.png"
+                alt="JS Wall Clock"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/js-wall-clock/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/js-wall-clock"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/js-wall-clock/"
+                  target="_blank"
+                >
+                  Full Functional JS Wall Clock
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio react-js">
+              <img src="images/projects/rts-todo.png" alt="Todo list" />
+
+              <p>
+                <small>
+                  <a href="https://rts-todo.netlify.app/" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/react-typescript-todolist"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a href="https://rts-todo.netlify.app/" target="_blank">
+                  Todo list- keep your day organize
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 4 -->
+            <div class="portfolio vanila-js">
+              <img
+                src="images/projects/fruity-facts.png"
+                alt="facts about fruit"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/fruity-facts/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/fruity-facts"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/fruity-facts/"
+                  target="_blank"
+                >
+                  Nutritional Facts about common fruits
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 5 -->
+            <div class="portfolio react-js">
+              <img src="images/projects/read-alquran.png" alt="Quranul Qarim" />
+
+              <p>
+                <small>
+                  <a href="https://quranul-qarim.netlify.app/" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/read-alquran"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a href="https://quranul-qarim.netlify.app/" target="_blank">
+                  Quranul Qarim with Tajweed Marker
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 6 -->
+            <div class="portfolio wordpress">
+              <img
+                src="images/projects/meal-wp.jpg"
+                alt="Landing page with wordpress"
+              />
+
+              <p>
+                <small>
+                  <a href="https://meal2.cloudaccess.host/" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small> <a href="#" target="_blank">&#10070; Code</a></small>
+              </p>
+              <h5>
+                <a href="https://meal2.cloudaccess.host/" target="_blank">
+                  Meal - One page WP site
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 7 -->
+            <div class="portfolio html-css">
+              <img
+                src="images/projects/agency-responsive-site.png"
+                alt="Responsive site made with html and css3"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/agency-responsive-site/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/agency-responsive-site"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/agency-responsive-site/"
+                  target="_blank"
+                >
+                  Agency responsive one page website
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 8 -->
+            <div class="portfolio vanila-js">
+              <img
+                src="images/projects/quran-jquery.png"
+                alt="Al quran with jQuery"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/Al-Quran/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/Al-Quran"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/Al-Quran/"
+                  target="_blank"
+                >
+                  Read and listen Al Quran
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 9 -->
+            <div class="portfolio vanila-js">
+              <img
+                src="images/projects/basic-calculator.png"
+                alt="Basic Calculator"
+              />
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/basic-calculator/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/basic-calculator"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/basic-calculator/"
+                  target="_blank"
+                  >Basic Calculator with multiple operation at a time.</a
+                >
+              </h5>
+            </div>
+            <!-- Portfolio Item 10 -->
+            <div class="portfolio html-css">
+              <img
+                src="images/projects/gadget-land.png"
+                alt="Gadget finder website"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/ph-ml2-responsive-landing-page/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/ph-ml2-responsive-landing-page"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/ph-ml2-responsive-landing-page/"
+                  target="_blank"
+                >
+                  Gadget Land - responsive website
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 11 -->
+            <div class="portfolio vanila-js">
+              <img
+                src="images/projects/expense-express.png"
+                alt="Expense tracker"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/expense-express/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/expense-express"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/expense-express/"
+                  target="_blank"
+                >
+                  Expense and Earn Accountant
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 12 -->
+            <div class="portfolio html-css">
+              <img
+                src="images/projects/convention.png"
+                alt="Convention center"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/convention/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/convention"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/convention/"
+                  target="_blank"
+                >
+                  Convention Center BS5 responsive website
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 13 -->
+            <div class="portfolio vanila-js">
+              <img src="images/projects/dictionary.jpg" alt="Dictionary" />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/lexicon/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/lexicon"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/lexicon/"
+                  target="_blank"
+                >
+                  Dictionary - Search, listen and learn synonyms and antonyms
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 14 -->
+            <div class="portfolio wordpress">
+              <img
+                src="images/projects/karma.png"
+                alt="Karma E-commerce site build with wordpress"
+              />
+
+              <p>
+                <small>
+                  <a href="https://dev-wckarma.pantheonsite.io/" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/wc-karma"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a href="https://dev-wckarma.pantheonsite.io/" target="_blank">
+                  Karma E-commerce site build with wordpress
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 15 -->
+            <div class="portfolio html-css">
+              <img
+                src="images/projects/medical-website.png"
+                alt="Medical Website"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/medical-website/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/medical-website"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/medical-website/"
+                  target="_blank"
+                >
+                  BS4 Medical Website, Mobile ready and responsive
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 16 -->
+            <div class="portfolio wordpress">
+              <img
+                src="images/projects/personal.jpg"
+                alt="Personal Portfolio site"
+              />
+
+              <p>
+                <small>
+                  <a href="http://dev-mhasan.pantheonsite.io/" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/Landing-Page-with-Kirki"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a href="http://dev-mhasan.pantheonsite.io/" target="_blank">
+                  Personal One page portfolio site
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 17 -->
+            <div class="portfolio wordpress">
+              <img
+                src="images/projects/philosophy.jpg"
+                alt="Philosophy                                                                                                             "
+              />
+
+              <p>
+                <small>
+                  <a href="https://hasan.cloudaccess.host/" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small> <a href="#" target="_blank">&#10070; Code</a></small>
+              </p>
+              <h5>
+                <a href="https://hasan.cloudaccess.host/" target="_blank">
+                  Philosophy multi-page WordPress blog theme
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 18 -->
+            <div class="portfolio react-js">
+              <img
+                src="images/projects/quiz-app.png"
+                alt="React Tech Quiz App"
+              />
+
+              <p>
+                <small>
+                  <a href="https://cstech-quiz.netlify.app/" target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/quiz-app"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a href="https://cstech-quiz.netlify.app/" target="_blank">
+                  Tech Quiz App with react and typescript
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 19 -->
+            <div class="portfolio vanila-js">
+              <img
+                src="images/projects/phone-inspector.png"
+                alt="Phone inspector"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/phone-inspector/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/phone-inspector"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/phone-inspector/"
+                  target="_blank"
+                >
+                  Search phone and see details
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 20 -->
+            <div class="portfolio vanila-js">
+              <img
+                src="images/projects/al-quran-js.png"
+                alt="Phone inspector"
+              />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/al-quran-js/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/al-quran-js"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/al-quran-js/"
+                  target="_blank"
+                >
+                  Read Al quran with multiple translation and recitation
+                </a>
+              </h5>
+            </div>
+            <!-- Portfolio Item 21 -->
+            <div class="portfolio html-css">
+              <img src="images/projects/css-clock.png" alt="css clock" />
+
+              <p>
+                <small>
+                  <a
+                    href="https://hasanthebest.github.io/css3-clock/"
+                    target="_blank"
+                    >&#9737; Live</a
+                  ></small
+                ><small>
+                  <a
+                    href="https://github.com/hasanTheBest/css3-clock"
+                    target="_blank"
+                    >&#10070; Code</a
+                  ></small
+                >
+              </p>
+              <h5>
+                <a
+                  href="https://hasanthebest.github.io/css3-clock/"
+                  target="_blank"
+                >
+                  Fake Functional CSS3 Wall Clock
+                </a>
+              </h5>
+            </div>
+          </div>
+        </section>
+
+        <!-- =========== Contact ================ -->
+        <section class="contact-section">
+          <h2 class="section-title">Contact</h2>
+
+          <!-- Contact Form Area -->
+          <div class="contact-form-area">
+            <!-- Contact Google Images -->
+            <div class="contact-map">
+              <img src="images/companies/company-7.svg" alt="" />
+            </div>
+
+            <!-- Contact Form title -->
+            <h3 class="contact-form-title">
+              How can <span class="text-primary">I help you</span>
+            </h3>
+
+            <!-- Contact Form -->
+            <form action="" class="contact-form">
+              <!-- Input container -->
+              <div class="form-input-wrapper">
+                <!-- Start container -->
+                <div>
+                  <!-- Full Name -->
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="full_name"
+                      id="full-name"
+                      placeholder="Full Name"
+                    />
+                    <label for="full-name">Full Name</label>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      required
+                      placeholder="Email"
+                    />
+                    <label for="email">Email*</label>
+                  </div>
+
+                  <!-- Subject -->
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+
+                <!-- End container -->
+                <div>
+                  <!-- Message -->
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Message"
+                    ></textarea>
+                    <label for="message">Message*</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group">
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Contact Information Area -->
+          <address class="contact-info">
+            <!-- Contact location -->
+            <div class="contact-info-item">
+              <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+              <b>San Francisco</b>
+            </div>
+
+            <!-- Contact location -->
+            <div class="contact-info-item">
+              <span class="icon"><i class="fas fa-phone-alt"></i></span>
+              <b>(+880 123 456)</b>
+            </div>
+            <!-- Contact Email -->
+            <div class="contact-info-item">
+              <span class="icon"><i class="far fa-envelope"></i></span>
+              <b class="h6">mail@email.com</b>
+            </div>
+
+            <!-- Contact Web -->
+            <div class="contact-info-item">
+              <span class="icon"><i class="fas fa-globe"></i></span>
+              <b class="h6">website.online.com</b>
+            </div>
+          </address>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

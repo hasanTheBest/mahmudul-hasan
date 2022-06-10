@@ -1,0 +1,69 @@
+.basic-info {
+  display: flex;
+}
+.about-me {
+  flex-basis: 55%;
+  flex-grow: 1;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.location {
+  flex-basis: 35%;
+  padding-left: 1rem;
+  align-self: center;
+}
+
+/* Basic Services */
+.basic-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  gap: 1rem;
+}
+
+.basic-service > .icon {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.basic-service-title {
+  margin-bottom: 0.5rem;
+}
+
+/* Clients */
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  margin: 2rem 0;
+  justify-content: center;
+  background-color: var(--dark5);
+}
+.client {
+  background-color: var(--dark5);
+  padding: 0.5rem;
+}
+.client > img {
+  width: 100%;
+  height: 3rem;
+}
+.client:not(:last-child) {
+  margin-right: 1rem;
+}
+
+/* Fun Facts */
+.fun-facts {
+  display: flex;
+}
+
+.fact {
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: var(--dark5);
+  text-align: center;
+}
+.fact:not(:last-child) {
+  margin-right: 1rem;
+}
+.fact > h5 {
+  margin-bottom: 0;
+}
